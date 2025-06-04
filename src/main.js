@@ -1,4 +1,5 @@
 //import './assets/main.css'
+import './components/headerStore.vue'
 
 import { createApp } from 'vue'
 //import { createPinia } from 'pinia'
