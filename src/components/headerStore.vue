@@ -1,13 +1,14 @@
 <template>
   <header class="header">
     <div class="header__container">
-      <div class="header__logo">MyShop</div>
+      <div class="header__logo">Honey</div>
 
       <button class="header__burger" @click="toggleMenu">☰</button>
 
       <nav :class="['header__nav', { 'header__nav--open': menuOpen }]">
         <a href="#" class="header__link">Home</a>
-        <a href="#" class="header__link">Products</a>
+        <a href="#" class="header__link">About</a>
+        <a href="#" class="header__link">Our Product</a>
         <a href="#" class="header__link">Contact</a>
       </nav>
 
@@ -21,6 +22,7 @@ import { ref } from 'vue'
 const menuOpen = ref(false)
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value
+  console.log('menuOpen:', menuOpen.value)
 }
 </script>
 
@@ -105,6 +107,9 @@ const toggleMenu = () => {
       flex-direction: column;
       align-items: flex-start;
       gap: 1rem;
+    }
+    &__nav--open {
+      display: block;
     }
 
     &__cart {
