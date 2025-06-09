@@ -14,7 +14,6 @@
 
       <div class="header__cart">🛒 <span class="header__cart-count">3</span></div>
     </div>
-    <img src="../assets/img/header/фон.png" alt="" />
   </header>
 </template>
 
